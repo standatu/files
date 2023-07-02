@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Product</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name() }}
+        </p>
+        <p>
+            {{ form.price.label }}<br>
+            {{ form.price() }}
+        </p>
+        <p>
+            <input type="submit" value="Update">
+        </p>
+    </form>
+</body>
+</html>

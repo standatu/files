@@ -1,0 +1,21 @@
+{% extends 'header.html' %}
+
+{% block content %}
+    <h1>Add Product</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name() }}
+        </p>
+        <p>
+            {{ form.price.label }}<br>
+            {{ form.price() }}
+        </p>
+        <p>
+            <input type="submit" value="Add Product">
+        </p>
+    </form>
+{% endblock %}
+
+{% extends 'footer.html' %}
