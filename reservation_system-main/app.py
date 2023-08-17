@@ -299,8 +299,7 @@ def book(provider_id):
         flash('Service booked successfully!')
         return redirect(url_for('dashboard'))
 
-        flash('Service booked successfully!')
-        return redirect(url_for('dashboard'))
+       
 
     services = Service.query.filter_by(provider_id=provider_id).all()
     return render_template('book.html', services=services)
